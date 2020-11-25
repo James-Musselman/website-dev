@@ -4,3 +4,33 @@ body {
   overflow: hidden;
   background: black;
 }
+
+header{
+  border-bottom-right-radius: 20px;
+  background-color: aquamarine;
+}
+footer {
+  border-top-left-radius: 15px;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  padding: 10px;
+  background-color: aquamarine;
+}
+.footer_links{
+  text-align: right;
+  margin-right: 20px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.middle {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}

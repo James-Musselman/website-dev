@@ -2,103 +2,49 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>COMING SOON</title>
+  <title>Musselman Development</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<link rel="stylesheet" href="./style.css">
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
-
-.bgimg {
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  color: white;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 10%;
-}
-
-.bottomleft {
-  position: absolute;
-  bottom: 0;
-  color: white;
-  font-size: 20px;
-}
-
-.middle {
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-centered_img {
-display: block;
-    margin-left: auto;
-    margin-right: auto 
-}
-
-hr {
-  margin: auto;
-  width: 40%;
-}
-</style>
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00ffe6">
-<meta name="apple-mobile-web-app-title" content="Musselman Development">
-<meta name="application-name" content="Musselman Development">
-<meta name="msapplication-TileColor" content="#00ffe6">
-<meta name="theme-color" content="#00ffe6">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00ffe6">
+  <meta name="apple-mobile-web-app-title" content="Musselman Development">
+  <meta name="application-name" content="Musselman Development">
+  <meta name="msapplication-TileColor" content="#00ffe6">
+  <meta name="theme-color" content="#00ffe6">
 </head>
 <body>
-     
-    <div class="middle">
-	<img src="musselman_dev_logo.svg">
+  <header>
+    <img src="musselman_dev_logo.svg" style="max-width: 35%;">
+  </header>   
+  <div class="middle">
+	  
     <h1 style='font-size: 70px'>COMING SOON</h1>
     <hr>
     <p style='font-size: 50px'id="countdown"></p>
   </div>
-  <div class="bottomleft">
-    <p >&copy; Copyright 2020 James Musselman.</p>
-  </div>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.min.js'></script><script  src="./script.js"></script>
-	<script>
-	// Set the date we're counting down to
-	var countDownDate = new Date("Jun 25, 2021 12:00:00").getTime();
 
-	// Update the count down every 1 second
-	var countdownfunction = setInterval(function() {
+  <footer class="grid-container">
+    <div class="grid-child copy">
+      <p > &copy; Copyright 2020 James Musselman.</p>
+    </div>
 
-	// Get todays date and time
-	var now = new Date().getTime();
-  
-	// Find the distance between now an the count down date
-	var distance = countDownDate - now;
-  
-	// Time calculations for days, hours, minutes and seconds
-	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
-	// Output the result in an element with id="countdown"
-	document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-	+ minutes + "m " + seconds + "s ";
-  
-	// If the count down is over, write some text 
-	if (distance < 0) {
-		clearInterval(countdownfunction);
-		document.getElementById("countdown").innerHTML = "EXPIRED";
-	}
-	}, 1000);
-	</script>
+    <div class="grid-child footer_links">
+        <a href="https://github.com" style="text-decoration: none;">GitHub</a> |
+        <a href="https://youtube.com" style="text-decoration: none;">Youtube</a> |
+        <a href="#" style="text-decoration: none;">Privacy Policy</a> |
+        <a href="#" style="text-decoration: none;">TOS</a>
+
+    </div>
+    
+  </footer>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.min.js'></script>
+  <script  src="./script.js"></script><script src="/countdown.js"></script>
+  <script src="./countdown.js"></script>
+
 </body>
 </html>
