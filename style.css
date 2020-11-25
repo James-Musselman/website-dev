@@ -7,25 +7,26 @@ body {
 
 header{
   border-bottom-right-radius: 20px;
-  background-color: aquamarine;
+  background-color: steelblue;
 }
 footer {
-  border-top-left-radius: 15px;
+  border-top-left-radius: 20px;
   position:absolute;
   bottom:0;
   width:100%;
-  padding: 10px;
-  background-color: aquamarine;
+  background-color: rgb(14, 79, 133);
 }
 .footer_links{
+  padding-top: 5%;
   text-align: right;
   margin-right: 20px;
 }
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
+  grid-gap: 10px;
 }
+
 .middle {
   color: white;
   position: absolute;
@@ -33,4 +34,9 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.copy{
+  padding-left: 2%;
+  color: black;
 }
