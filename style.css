@@ -17,14 +17,13 @@ footer {
   background-color: rgb(14, 79, 133);
 }
 .footer_links{
-  padding-top: 5%;
   text-align: right;
   margin-right: 20px;
+  text-align: end;
 }
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
 }
 
 .middle {
