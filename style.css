@@ -26,15 +26,6 @@ footer {
   grid-template-columns: 1fr 1fr;
 }
 
-.middle {
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
 .copy{
   padding-left: 2%;
   color: black;
