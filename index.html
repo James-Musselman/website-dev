@@ -4,28 +4,56 @@
   <meta charset="UTF-8">
   <title>Musselman Development</title>
   <link rel="stylesheet" href="style.css">
-  
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00ffe6">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-title" content="Musselman Development">
   <meta name="application-name" content="Musselman Development">
   <meta name="msapplication-TileColor" content="#00ffe6">
   <meta name="theme-color" content="#00ffe6">
 </head>
 <body>
-  <header>
-    <img src="musselman_dev_logo.svg" style="max-width: 35%;">
+  <header class="row">
+    <div class="container-fluid">
+      <img src="musselman_dev_logo.svg" style="max-width: 35%;">
+    </div>
   </header>   
-    
-  
-  <div class="content">
-    <p>test</p>
-  </div>
 
+  <script>
+    $(document).ready(function(){
+        $("#myModal").modal('show');
+    });
+</script>
+</head>
+<body>
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Warning:</h5>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              <p>This site is a work in progress!</p>
+              <p> You should be on <a href="https://jmusselman.dev">jmussselman.dev</a>.</p>  
+            </div>
+        </div>
+    </div>
+</div>
+  
+
+  
+  
+  
+  
   <footer>
       <div class="grid-container">
       <div class="grid-child copy">
@@ -34,8 +62,8 @@
 
       <div class="grid-child footer_links">
           <p>
-            <a href="https://github.com" style="text-decoration: none;">GitHub</a> |
-            <a href="https://youtube.com" style="text-decoration: none;">Youtube</a> |
+            <a href="https://github.com/James-Musselman" style="text-decoration: none;">GitHub</a> |
+            <a href="https://youtube.com/channel/UCY8BaFysB15Q3rjYRysDl9g" style="text-decoration: none;">Youtube</a> |
             <a href="#" style="text-decoration: none;">Privacy Policy</a> |
             <a href="#" style="text-decoration: none;">TOS</a>
           </p>
@@ -44,9 +72,12 @@
   </div>
   </footer>
 
+  
   <script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.min.js'></script>
-  <script  src="./script.js"></script><script src="/countdown.js"></script>
-  <script src="./countdown.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 </html>
